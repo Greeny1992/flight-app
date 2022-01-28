@@ -1,0 +1,67 @@
+<h1>Flight Edit</h1>
+<p>Id: {{ id }}</p>
+<p>ShowDetail: {{ id }}</p>
+
+<form [formGroup]="formGroup">
+  <div class="form-group">
+    <label>Id:</label>
+    <input formControlName="id" class="form-control" />
+  </div>
+  <fieldset formGroupName="route">
+    <div class="error" *ngIf="routeFormGroup.hasError('roundTrip')">
+      Rundflüge nicht erlaubt
+    </div>
+    <div class="form-group">
+      <label>From:</label>
+      <input formControlName="from" class="form-control" />
+      <div class="error" *ngIf="routeFormGroup.controls['from'].valid === false">
+        Validierungsfehler
+      </div>
+      <div
+        class="error"
+        *ngIf="routeFormGroup.controls['from'].hasError('required')"
+      >
+        Pflichtfeld
+      </div>
+
+      <div
+        class="error"
+        *ngIf="routeFormGroup.controls['from'].hasError('minlength')"
+      >
+        Min 3 Zeichen
+      </div>
+      <div
+        class="error"
+        *ngIf="routeFormGroup.controls['from'].hasError('asyncCity')"
+      >
+        Diese Stadt wird nicht unterstützt (async)
+      </div>
+    </div>
+    <div class="form-group">
+      <label>To:</label>
+      <input formControlName="to" class="form-control" />
+    </div>
+  </fieldset>
+  <div class="form-group">
+    <label>Date:</label>
+    <input formControlName="date" class="form-control" />
+  </div>
+  <div class="form-group">
+    <input formControlName="delayed" type="checkbox" />
+    &nbsp;
+    <label>Delayed</label>
+  </div>
+
+  <fieldset formArrayName="categories">
+    <div *ngFor="let group of categoriesFormArray.controls; let i = index" [formGroupName]="i" class="form-group">
+        <label>Category Name:</label>
+        <input formControlName="categoryName" class="form-control">
+        <label>Base Price:</label>
+        <input formControlName="basePrice" class="form-control">
+    </div>
+  </fieldset>
+
+  <button class="btn btn-default" (click)="addCategory()">Add Category</button>
+
+  <button class="btn btn-default" (click)="save()">Save</button>
+</form>

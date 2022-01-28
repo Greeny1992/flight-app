@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome 96.0.4664.110 (Windows 10)" package="" timestamp="2022-01-11T08:54:10" id="0" hostname="NAGNO319" tests="0" errors="1" failures="0" time="0">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36"/>
+  </properties>
+  <system-out>
+    <![CDATA[Chrome 96.0.4664.110 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-11T08:54:11.211Z'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-11T08:54:11.211Z'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-11T08:54:11.261Z'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-11T08:54:11.261Z'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-11T08:54:11.285Z'
+,Chrome 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-11T08:54:11.285Z'
+,Chrome 96.0.4664.110 (Windows 10) ERROR
+  Disconnected , because no message in 30000 ms.
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

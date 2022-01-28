@@ -1,0 +1,15 @@
+<div class="error" *ngIf="errors?.['appCity']"> 
+  Dieser Flughafen existiert nicht.
+</div>
+<div class="error" *ngIf="errors?.['appAsyncCity']"> 
+  Diese Stadt wird nicht angeflogen. (Async)
+</div>
+<div class="error" *ngIf="errors?.['required']"> 
+  Dieses Feld ist ein Pflichtfeld.
+</div>
+<div class="error" *ngIf="errors?.['minlength']"> 
+  Erfassen Sie bitte min. {{errors?.['minlength']?.requiredLength}} Zeichen.
+</div>
+<div class="error" *ngIf="errors?.['appRoundTrip']">
+  Round Trips are not supported
+</div>

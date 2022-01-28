@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 96.0.4664.110 (Windows 10)" package="" timestamp="2022-01-10T17:23:01" id="0" hostname="NAGNO319" tests="28" errors="0" failures="0" time="0.129">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/96.0.4664.110 Safari/537.36"/>
+  </properties>
+  <testcase name="Add should correct add" time="0.029" classname="Chrome_Headless_96_0_4664_110_(Windows_10).Add"/>
+  <testcase name="FlightSearchComponent should have no loaded flights initially" time="0.063" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightSearchComponent"/>
+  <testcase name="FlightSearchComponent should search f when from and to are given" time="0.019" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightSearchComponent"/>
+  <testcase name="FlightSearchComponent should not search f without from and to " time="0.018" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightSearchComponent"/>
+  <testcase name="OnlineService should be created" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).OnlineService">
+    <skipped/>
+  </testcase>
+  <testcase name="DummyFlightService should be created" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).DummyFlightService">
+    <skipped/>
+  </testcase>
+  <testcase name="CityValidationDirective should create an instance" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).CityValidationDirective">
+    <skipped/>
+  </testcase>
+  <testcase name="HomeComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).HomeComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="DefaultFlightService should be created" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).DefaultFlightService">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightCardComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightCardComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="BasketComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).BasketComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="NotFoundComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).NotFoundComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="CityPipe create an instance" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).CityPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightEditComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightEditComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightService should be created" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightService">
+    <skipped/>
+  </testcase>
+  <testcase name="PassengerSearchComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).PassengerSearchComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightBookingComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightBookingComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightTypeaheadComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightTypeaheadComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="FlightTypeaheadService should be created" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).FlightTypeaheadService">
+    <skipped/>
+  </testcase>
+  <testcase name="RoundTripValidationDirective should create an instance" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).RoundTripValidationDirective">
+    <skipped/>
+  </testcase>
+  <testcase name="ValidationErrorsComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).ValidationErrorsComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="DateComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).DateComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should have as title 'flight-app'" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should create the app" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AppComponent should render title" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).AppComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="AboutComponent should create" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).AboutComponent">
+    <skipped/>
+  </testcase>
+  <testcase name="StatusColorPipe create an instance" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).StatusColorPipe">
+    <skipped/>
+  </testcase>
+  <testcase name="StatusFilterPipe create an instance" time="0" classname="Chrome_Headless_96_0_4664_110_(Windows_10).StatusFilterPipe">
+    <skipped/>
+  </testcase>
+  <system-out>
+    <![CDATA[Chrome Headless 96.0.4664.110 (Windows 10) LOG: 'Vorbereitungsarbeiten.... '
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-10T17:23:01.504Z'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-10T17:23:01.504Z'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-10T17:23:01.546Z'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-10T17:23:01.546Z'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'Eigentlich dummy'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in constructor', null
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnChanges', '2022-01-10T17:23:01.568Z'
+,Chrome Headless 96.0.4664.110 (Windows 10) DEBUG: 'date in ngOnInit', '2022-01-10T17:23:01.568Z'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

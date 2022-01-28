@@ -1,0 +1,88 @@
+<h1>Flight Search</h1>
+<form #form="ngForm" appRoundTrip>
+  <div class="form-group">
+    <label>From:</label>
+    <input
+      [(ngModel)]="from"
+      [ngModelOptions]="{ updateOn: 'blur'}"
+      name="from"
+      class="form-control"
+      required
+      appAsyncCity
+      appCity="Tippsdrill,Graz,München,Hamburg,Frankfurt,Zürich,Wien"
+      [strict]="true"
+      minlength="3"
+      maxlength="30"
+    />
+  </div>
+  <app-validation-errors [errors]="form?.controls?.['from']?.errors"></app-validation-errors>
+  <div class="form-group">
+    <label>To:</label>
+    <input [(ngModel)]="to" name="to" class="form-control" />
+  </div>
+
+  <div class="form-group">
+    <input
+      [(ngModel)]="delayedFilter"
+      name="delayedFilter"
+      type="checkbox"
+      id="delayedFilter"
+    />
+    &nbsp;
+    <label for="delayedFilter">Delayed</label>
+  </div>
+  <div class="form-group">
+    <input
+      [(ngModel)]="nonstop"
+      name="nonstop"
+      type="checkbox"
+      id="nonstop"
+    />
+    &nbsp;
+    <label for="nonstop">Nonstop</label>
+  </div>
+  <div class="form-group">
+    <label>Flight Class</label>
+    <div *ngFor="let c of flightClasses">
+      <label>
+        <input type="radio" name="flightClass" [(ngModel)]="flightClass" [value]="c">
+        {{c.name}}
+      </label>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Luggage</label>
+      <select [(ngModel)]="luggage" name="luggage" class="form-control">
+        <option *ngFor="let l of luggageOptions" [ngValue]="l">{{l.name}}</option>
+      </select>
+  </div>
+
+  <div class="form-group">
+    <button
+      class="btn btn-default"
+      (click)="search()"
+      [disabled]="!form?.valid"
+    >
+      Search
+    </button>
+  </div>
+</form>
+<div class="form-group">
+  <label>Date: </label>
+  <app-date [(date)]="date"></app-date>
+  {{ date }}
+</div>
+<div class="row">
+  <div
+    *ngFor="let f of flights | statusFilter: delayedFilter"
+    class="col-xs-12 col-sm-6 col-lg-4 col-xl-3"
+  >
+    <app-flight-card
+      [item]="f"
+      [selected]="basket[f.id]"
+      (selectChange)="basket[f.id] = $event"
+    ></app-flight-card>
+  </div>
+</div>
+<b>Basket</b>
+<pre>{{ basket | json }}</pre>
